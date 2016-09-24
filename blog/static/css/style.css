@@ -90,3 +90,20 @@ h1, h2, h3, h4, h5, h6, a {
     margin-bottom:10px;
   }
 }
+
+/* styling the checkbox "keep me logged in"*/
+.keeplogin{
+    margin-top: -5px;
+}
+.keeplogin input,
+.keeplogin label{
+    display: inline-block;
+    font-size: 12px;    
+    font-style: italic;
+}
+.keeplogin input#loginkeeping{
+    margin-right: 5px;
+}
+.keeplogin label{
+    width: 80%;
+}

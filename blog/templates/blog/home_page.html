@@ -35,9 +35,15 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <h3>Password:</h3>
     <input type="password" placeholder="Password"/>
     <br>
+    <p class="keeplogin">
+                  <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                  <label for="loginkeeping">Keep me logged in</label>
+                </p>
+    <br>
     <input type="button" value="Login" class="login-button"/>
     <br>
-    <a class="sign-up">Sign Up!</a>
+    <br>
+    <a href="{% url 'register' %}"><strong>Sign Up!</strong></a>
     <br>
     <h6 class="no-access">forgot password</h6>
   </div>

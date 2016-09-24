@@ -12,3 +12,6 @@ from django.shortcuts import redirect
 # Create your views here.
 def home_page(request):
 	return render(request, 'blog/home_page.html', {})
+
+def register(request):
+	return render(request, 'blog/register.html', {})
