@@ -1,66 +1,82 @@
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
-pre, form, fieldset, input, textarea, p, blockquote, th, td { 
-  padding:0;
-  margin:0;}
-
-fieldset, img {border:0}
-
-ol, ul, li {list-style:none}
-
-:focus {outline:none}
-
-body,
-input,
-textarea,
-select {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #4c4c4c;
-}
-
-p {
-  font-size: 12px;
-  width: 150px;
-  display: inline-block;
-  margin-left: 18px;
-}
-h1 {
-  font-size: 32px;
-  font-weight: 300;
-  color: #4c4c4c;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-
-html{
-  background-color: #ffffff;
-}
-
-.testbox {
-  margin: 20px auto;
-  width: 343px; 
-  height: 464px; 
-  -webkit-border-radius: 8px/7px; 
-  -moz-border-radius: 8px/7px; 
-  border-radius: 8px/7px; 
-  background-color: #ebebeb; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  border: solid 1px #cbc9c9;
-}
-
-input[type=radio] {
-  visibility: hidden;
-}
-
-form{
-  margin: 0 30px;
-}
-
-label.radio {
-	cursor: pointer;
-  text-indent: 35px;
-  overflow: visible;
-  display: inline-block;
+*{
+ margin:0px;
+ padding:0px;
+ }
+body{
+ font-family:Tahoma, Geneva, sans-serif;
+ }
+#container{
+ width:550px;
+ background-color:rgba(250,250,252,.9);
+ margin:auto;
+ margin-top:10px;
+ margin-bottom:10px;
+ box-shadow:0 0 3px #999;
+ }
+#container_body{
+ padding:20px;
+ }
+.form_title{
+ font-size:35px;
+ color:#141823;
+ text-align:center;
+ padding:10px;
+ font-weight:normal;
+ }
+.head_para{
+ font-size:19px;
+ color:#99a2a7;
+ text-align:center;
+ font-weight:normal;
+ }
+#form_name{
+ padding:25px 0 0 15px;
+ }
+.firstnameorlastname{
+  margin-right:20px;
+ }
+.input_name{
+ width:207px;
+ padding:5px;
+ font-size:18px;
+ }
+#email_form{
+ clear:both;
+ padding:15px 0 10px 0px;
+ }
+.input_email{
+ width:434px;
+ padding:5px;
+ font-size:18px;
+ }
+#Re_email_form{
+ padding:10px 0 10px 0px;
+ }
+.input_Re_email{
+ width:434px;
+ padding:5px;
+ font-size:18px;
+ }
+#password_form{
+ padding:10px 0 10px 0px;
+ }
+.input_password{
+ width:434px;
+ padding:5px;
+ font-size:18px;
+ }
+#radio_button{
+ padding:10px 0 0 0;
+ }
+#sign_user{
+ font-size:14px;
+ color:#FFF;
+ text-align:center;
+ background-color:#3B5998;
+ padding:10px;
+ margin-top:10px;
+ cursor: pointer;
+ }
+#errorBox{
+ color:#F00;
+ }

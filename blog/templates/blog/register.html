@@ -22,37 +22,48 @@ href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     </head>
 
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
-
-<div class="testbox">
-  <h1>Registration</h1>
-
-  <form action="/">
-      <hr>
-    <div class="accounttype">
-      <input type="radio" value="None" id="radioOne" name="account" checked/>
-      <label for="radioOne" class="radio" chec>Personal</label>
-      <input type="radio" value="None" id="radioTwo" name="account" />
-      <label for="radioTwo" class="radio">Company</label>
+<div id="emptyDiv"></div>
+<div id="description"></div>
+<!--container start-->
+<div id="container">
+  <div id="container_body">
+    <div>
+      <h2 class="form_title">Registration Form</h2>
+      
     </div>
-  <hr>
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Email" required/>
-  <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="name" id="name" placeholder="Name" required/>
-  <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="password" name="name" id="name" placeholder="Password" required/>
-  <div class="gender">
-    <input type="radio" value="None" id="male" name="gender" checked/>
-    <label for="male" class="radio" chec>Male</label>
-    <input type="radio" value="None" id="female" name="gender" />
-    <label for="female" class="radio">Female</label>
-   </div> 
-   <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
-   <a href="#" class="button">Register</a>
-  </form>
+    <!--Form  start-->
+    <div id="form_name">
+      <div class="firstnameorlastname">
+       <form name="form" >
+       <div id="errorBox"></div>
+        <input type="text" name="Name" value="" placeholder="First Name"  class="input_name" >
+        <input type="text" name="LastName" value="" placeholder="Last Name" class="input_name" >
+         
+      </div>
+      <div id="email_form">
+        <input type="text" name="Email" value=""  placeholder="Your Email" class="input_email">
+      </div>
+      <div id="Re_email_form">
+        <input type="text" name="enterEmail" value=""  placeholder="Re-enter Email" class="input_Re_email">
+      </div>
+      <div id="password_form">
+        <input type="password" name="Password" value=""  placeholder="New Password" class="input_password">
+      </div>
+      
+      <div id="radio_button">
+        <input type="radio" name="radiobutton" value="Female">
+        <label >Female</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="radiobutton" value="Male">
+        <label >Male</label>
+      </div>
+       <div>
+        <p id="sign_user" onClick="Submit()">Sign Up </p>
+      </div>
+     </form>
+    </div>
+    <!--form ends-->
+  </div>
 </div>
-
   </body>
 </html>
